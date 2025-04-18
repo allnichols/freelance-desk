@@ -1,6 +1,6 @@
 import React from "react";
 import Database from "@tauri-apps/plugin-sql";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "react-router";
 import StatusBadge from "./component/StatusBadge";
 
 let db: any;

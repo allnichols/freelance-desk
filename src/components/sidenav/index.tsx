@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { NavLink } from "react-router";
 import styles from "./sidenav.module.css";
 
 type NavItem = {
@@ -12,9 +12,9 @@ const SideNav = ({ navItems }: { navItems: NavItem[] }) => {
       <ul className={styles.sidenavList}>
         {navItems.map((item, index) => (
           <li key={index} className={styles.sidenavItem}>
-            <Link to={item.to} className={styles.sidenavLink}>
+            <NavLink to={item.to} className={styles.sidenavLink}>
               {item.title}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
